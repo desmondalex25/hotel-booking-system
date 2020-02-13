@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="table table-striped custom-table">
+                        <table class="table table-striped custom-table datatable">
                             <thead>
                             <tr>
                                 <th>Image</th>

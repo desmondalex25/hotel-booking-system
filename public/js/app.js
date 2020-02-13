@@ -1925,8 +1925,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
+  mounted: function mounted() {// console.log('Component mounted.')
   }
 });
 
@@ -48070,7 +48069,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(/*! ./components/Example.vue */ "./resources/assets/js/components/Example.vue"));
+Vue.component('example', __webpack_require__(/*! ./components/Example.vue */ "./resources/assets/js/components/Example.vue")); // Vue.component('bookingNum', require('./components/bookNum.vue'));
+
 var app = new Vue({
   el: '#app'
 });

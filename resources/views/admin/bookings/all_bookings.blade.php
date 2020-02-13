@@ -6,10 +6,11 @@
             <div class="row">
 
                 <div class="col-sm-4 col-3">
+                    <example></example>
 
                     <h4 class="page-title">Bookings</h4>
 
-                    @if(session()->has('info'))
+                @if(session()->has('info'))
                         <div class="alert alert-danger">
                             {{ session()->get('info') }}
                         </div>
@@ -22,19 +23,19 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="table table-striped custom-table " id="data_table">
+                        <table class="table table-striped custom-table datatable table-bordered table-condensed" id="data_table">
                             <thead>
                             <tr>
-                                <th style="width:10%;">Booking ID</th>
-                                <th style="width:10%;">Customer Name</th>
-                                <th>Room type</th>
-                                <th>Number</th>
-                                <th style="width:10%;">Arrive</th>
-                                <th style="width:10%;">Depart</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Booked Time</th>
-                                <th>Status</th>
+                                <th style="width:5%;">Booking ID</th>
+                                <th style="width:5%;">Customer Name</th>
+                                <th style="width:5%;">Room type</th>
+                                <th style="width:5%;">Number</th>
+                                <th style="width:5%;">Arrive</th>
+                                <th style="width:5%;">Depart</th>
+                                <th style="width:5%;">Email</th>
+                                <th style="width:5%;">Phone</th>
+                                <th style="width:5%;">Booked Time</th>
+                                <th style="width:5%;">Status</th>
                                 <th class="text-right">Action</th>
                             </tr>
                             </thead>
@@ -106,4 +107,5 @@
         </div>
 
     </div>
+
 @endsection

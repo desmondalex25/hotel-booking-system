@@ -5,7 +5,7 @@ Version      : 1.0
 */
 
 $(document).ready(function($) {
-	
+
 	// Variables declarations
 	
 	var $wrapper = $('.main-wrapper');
@@ -176,6 +176,8 @@ $(document).ready(function($) {
             "bFilter": false,
         });
     }
+
+    // $("#data_table").DataTable();
 
     // Bootstrap Tooltip
 

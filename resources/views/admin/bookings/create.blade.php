@@ -20,6 +20,7 @@
             {{--@endforeach--}}
           {{--</ul>--}}
         {{--@endif--}}
+
       </div>
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -27,11 +28,12 @@
            {{ csrf_field() }}
             @if(isset($booking))
               {{ method_field('PUT') }}
+
             @endif
             <div class="row">
               <div class="col-md">
                 <div class="form-group">
-                  <label>Room number</label>
+                  <label>Customer Name</label>
                   <select name="customer_id" class="select">
                     <option value="">select customer</option>
                     @foreach($customers as $customer)
@@ -45,6 +47,8 @@
 
                     @endforeach
                   </select>
+
+
                   <div class="text-danger">
                     <strong>{{ $errors->first('customer_id') }}</strong>
                   </div>

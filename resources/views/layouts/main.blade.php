@@ -214,6 +214,7 @@
 {{--Sidebar ends--}}
     <main class="py-4">
         @yield('content')
+
     </main>
     {{--Notification Starts--}}
     <div class="notification-box">
